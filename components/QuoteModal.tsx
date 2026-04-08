@@ -36,13 +36,13 @@ export const QuoteModal = () => {
                <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl" />
                
                <div className="relative z-10">
-                  <div className="bg-accent/40 backdrop-blur-md p-4 rounded-3xl w-fit mb-8 shadow-2xl brightness-0 invert">
+                  <div className="bg-accent/40 backdrop-blur-md p-4 rounded-3xl w-fit mb-8 shadow-2xl">
                      <Image 
                        src="/Sprintz full logo.svg" 
                        alt="Sprintz" 
                        width={100} 
                        height={28} 
-                       className="h-7 w-auto object-contain"
+                       className="h-7 w-auto object-contain brightness-0 invert"
                      />
                   </div>
                   <h3 className="text-3xl font-black uppercase tracking-tighter leading-none mb-6">
