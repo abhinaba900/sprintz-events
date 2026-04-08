@@ -345,15 +345,26 @@ export default function Home() {
         <section id="stats" className="py-24 bg-primary text-white overflow-hidden relative">
           {/* Animated Speed Lines */}
           <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
-            {[...Array(10)].map((_, i) => (
+            {[
+              { width: "75%", opacity: 0.1 },
+              { width: "90%", opacity: 0.2 },
+              { width: "65%", opacity: 0.15 },
+              { width: "85%", opacity: 0.3 },
+              { width: "55%", opacity: 0.1 },
+              { width: "95%", opacity: 0.25 },
+              { width: "70%", opacity: 0.12 },
+              { width: "80%", opacity: 0.22 },
+              { width: "60%", opacity: 0.18 },
+              { width: "88%", opacity: 0.28 }
+            ].map((style, i) => (
               <div 
                 key={i} 
                 className="absolute bg-white h-[1px]" 
                 style={{ 
                   top: `${i * 10}%`, 
                   left: 0, 
-                  width: `${50 + Math.random() * 50}%`,
-                  opacity: Math.random() * 0.5,
+                  width: style.width,
+                  opacity: style.opacity,
                   transform: 'rotate(-45deg)'
                 }} 
               />
