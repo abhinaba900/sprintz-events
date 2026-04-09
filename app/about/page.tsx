@@ -50,7 +50,7 @@ export default function AboutPage() {
 
       <main className="flex-1 pt-0">
         {/* 1. HERO SECTION */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-primary pt-20">
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-primary pt-24 md:pt-32">
           <div className="absolute inset-0 z-0 opacity-20">
             <Image 
               src="/corporate-hero.png" 

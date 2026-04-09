@@ -46,7 +46,7 @@ export default function HowItWorksPage() {
 
       <main className="flex-1 pt-0">
         {/* 1. HERO SECTION */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-primary pt-20">
+        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-primary pt-24 md:pt-32">
           <div className="absolute inset-0 z-0 opacity-10">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/20 rounded-full blur-[120px]" />

@@ -63,7 +63,7 @@ export default function SportsEventsPage() {
 
       <main className="flex-1 pt-0">
         {/* 1. HERO SECTION */}
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-24 md:pt-32">
           <div className="absolute inset-0 z-0">
             <Image 
               src="/sports-hero.png" 

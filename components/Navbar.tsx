@@ -14,6 +14,17 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -37,7 +48,8 @@ const Navbar = () => {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/90 backdrop-blur-md py-4 shadow-sm"
-          : "bg-transparent py-6"
+          : "bg-transparent py-6",
+        mobileMenuOpen && "bg-primary backdrop-blur-none"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -45,7 +57,8 @@ const Navbar = () => {
           href="/" 
           className={cn(
             "transition-all duration-500",
-            !isScrolled && !mobileMenuOpen ? "brightness-0 invert" : ""
+            (!isScrolled && !mobileMenuOpen) ? "brightness-0 invert" : "",
+            mobileMenuOpen ? "brightness-0 invert" : ""
           )}
         >
           <Image 
@@ -84,7 +97,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden"
+          className="lg:hidden relative z-[60]"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -98,16 +111,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-primary z-40 transition-transform duration-500 lg:hidden flex flex-col items-center justify-center gap-8",
-          mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
+          "fixed inset-0 bg-primary z-40 transition-all duration-500 lg:hidden flex flex-col items-center justify-center gap-8",
+          mobileMenuOpen 
+            ? "translate-y-0 opacity-100 visible" 
+            : "-translate-y-full opacity-0 invisible pointer-events-none"
         )}
       >
-        <button
-          className="absolute top-6 right-6 text-white"
-          onClick={() => setMobileMenuOpen(false)}
-        >
-          <X className="w-8 h-8" />
-        </button>
         {navLinks.map((link) => (
           <Link
             key={link.name}
