@@ -80,7 +80,7 @@ export default function AboutPage() {
                 animate="visible"
                 custom={1}
                 variants={fadeIn}
-                className="text-4xl md:text-5xl font-black leading-[0.9] mb-8 tracking-tighter italic uppercase"
+                className="text-4xl md:text-5xl font-black leading-[1.4] mb-8 tracking-tighter italic uppercase"
               >
                 Built for <br />
                 <span className="text-accent underline decoration-8 underline-offset-10">Seamless Events</span> <br />
