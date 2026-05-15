@@ -24,7 +24,10 @@ import {
   Star,
   Camera,
   ClipboardCheck,
-  LayoutGrid
+  LayoutGrid,
+  Sparkles,
+  Sun,
+  Leaf
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Navbar from "@/components/Navbar";
@@ -285,7 +288,7 @@ export default function SportsEventsPage() {
                  </div>
                  <div className="relative">
                     <div className="aspect-[4/3] rounded-[3rem] overflow-hidden border-8 border-white/10 shadow-2xl relative">
-                       <Image src="/sports-hero.png" alt="Tournament Chart" fill className="object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" />
+                       <Image src="/tournament-formats.png" alt="Tournament Management" fill className="object-cover hover:scale-110 transition-all duration-700" />
                        <div className="absolute inset-0 bg-accent/20 mix-blend-overlay" />
                        <div className="absolute inset-0 flex items-center justify-center p-12">
                           <div className="w-full h-full border-2 border-white/20 rounded-2xl flex flex-col items-center justify-center text-center">
@@ -390,7 +393,99 @@ export default function SportsEventsPage() {
            </div>
         </section>
 
-        {/* 7. OUR TRACK RECORD */}
+        {/* 7. YOGA & WELLNESS SECTION */}
+        <section className="py-32 bg-white relative overflow-hidden">
+           {/* Abstract Zen Shapes */}
+           <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+              <div className="absolute -top-24 -left-24 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+              <div className="absolute top-1/2 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+           </div>
+
+           <div className="container mx-auto px-6 relative z-10">
+              <div className="flex flex-col lg:flex-row gap-20 items-center">
+                 <div className="lg:w-1/2">
+                    <motion.div
+                       initial={{ opacity: 0, x: -30 }}
+                       whileInView={{ opacity: 1, x: 0 }}
+                       className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 text-emerald-600 px-5 py-2 rounded-full mb-8"
+                    >
+                       <Sun className="w-4 h-4" />
+                       <span className="text-xs font-black tracking-[0.2em] uppercase">Employee Wellness</span>
+                    </motion.div>
+                    
+                    <motion.h2 
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       className="text-4xl md:text-5xl font-black text-primary italic uppercase tracking-tighter leading-[0.9] mb-8"
+                    >
+                       Exclusive <br />
+                       <span className="text-emerald-500 underline decoration-8 decoration-emerald-100 underline-offset-8">Yoga & Zen</span> Sessions
+                    </motion.h2>
+                    
+                    <motion.p 
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ delay: 0.1 }}
+                       className="text-xl text-zinc-500 font-medium leading-relaxed mb-12"
+                    >
+                       Shift from high-energy competition to deep mental clarity. Our yoga programs are designed to help employees destress, improve focus, and maintain a healthy work-life balance.
+                    </motion.p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                       {[
+                          { title: "Yoga Retreats", desc: "Immersive multi-day wellness journeys at scenic locations.", icon: MapPin },
+                          { title: "Corporate Yoga Days", desc: "Full-day dedicated sessions focusing on physical & mental health.", icon: Sun },
+                          { title: "Daily Sessions", desc: "Ongoing 30-45 min sessions to keep the energy consistent.", icon: Clock },
+                          { title: "De-stress Workshops", desc: "Specialized breathing and mindfulness techniques.", icon: Leaf }
+                       ].map((service, id) => (
+                          <motion.div 
+                             key={id}
+                             whileHover={{ scale: 1.02 }}
+                             className="p-6 rounded-3xl bg-subtle-grey border border-zinc-100 group transition-all"
+                          >
+                             <div className="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                                <service.icon size={20} />
+                             </div>
+                             <h4 className="font-black text-primary italic uppercase tracking-tighter text-sm mb-2">{service.title}</h4>
+                             <p className="text-xs text-zinc-500 font-medium leading-relaxed">{service.desc}</p>
+                          </motion.div>
+                       ))}
+                    </div>
+                 </div>
+
+                 <div className="lg:w-1/2">
+                    <motion.div 
+                       initial={{ opacity: 0, scale: 0.9 }}
+                       whileInView={{ opacity: 1, scale: 1 }}
+                       className="relative"
+                    >
+                       <div className="aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl relative">
+                          <Image 
+                             src="/yoga-wellness.png" 
+                             alt="Yoga and Wellness Sessions" 
+                             fill 
+                             className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent" />
+                       </div>
+                       
+                       {/* Floating Stats or Label */}
+                       <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-[2.5rem] shadow-2xl border border-zinc-100 max-w-[200px]">
+                          <div className="flex items-center gap-2 text-emerald-500 mb-2">
+                             <Sparkles className="w-5 h-5" />
+                             <span className="font-black italic uppercase text-xs tracking-widest">Zen Mode</span>
+                          </div>
+                          <p className="text-zinc-500 text-xs font-bold leading-relaxed italic">
+                             "100% focused on mental well-being & employee clarity."
+                          </p>
+                       </div>
+                    </motion.div>
+                 </div>
+              </div>
+           </div>
+        </section>
+
+        {/* 8. OUR TRACK RECORD */}
         <section className="py-24 bg-primary text-white overflow-hidden relative border-t border-white/5">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -419,7 +514,7 @@ export default function SportsEventsPage() {
           </div>
         </section>
 
-        {/* 8. GALLERY PREVIEW */}
+        {/* 9. GALLERY PREVIEW */}
         <section className="py-24 bg-white overflow-hidden">
           <div className="container mx-auto px-6">
              <div className="flex items-end justify-between mb-16">
@@ -457,7 +552,7 @@ export default function SportsEventsPage() {
           </div>
         </section>
 
-        {/* 9. CTA SECTION */}
+        {/* 10. CTA SECTION */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6">
             <motion.div 
