@@ -115,13 +115,13 @@ export default function ContactPage() {
                 <div className="space-y-6">
                    <h3 className="text-xl font-black text-primary italic uppercase tracking-tighter ml-2">Quick Contact</h3>
                    <div className="space-y-4">
-                      <a href="tel:+919876543210" className="flex items-center gap-6 p-6 rounded-[2.5rem] bg-subtle-grey border border-zinc-100 group hover:border-accent/40 transition-all">
+                      <a href="tel:+919148777814" className="flex items-center gap-6 p-6 rounded-[2.5rem] bg-subtle-grey border border-zinc-100 group hover:border-accent/40 transition-all">
                         <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all">
                            <Phone size={24} />
                         </div>
                         <div>
                            <div className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Call Us</div>
-                           <div className="text-lg font-black text-primary italic uppercase tracking-tighter">+91 98765 43210</div>
+                           <div className="text-lg font-black text-primary italic uppercase tracking-tighter">+91 91 487 778 14</div>
                         </div>
                       </a>
                       <a href="mailto:hello@sprintzevents.com" className="flex items-center gap-6 p-6 rounded-[2.5rem] bg-subtle-grey border border-zinc-100 group hover:border-accent/40 transition-all">
@@ -133,7 +133,7 @@ export default function ContactPage() {
                            <div className="text-lg font-black text-primary italic uppercase tracking-tighter underline">hello@sprintzevents.com</div>
                         </div>
                       </a>
-                      <a href="https://wa.me/919876543210" className="flex items-center gap-6 p-8 rounded-[3rem] bg-primary text-white group hover:bg-accent transition-all shadow-xl">
+                      <a href="https://wa.me/919148777814?text=Hi%20Sprintz%20Events%2C%20I'd%20like%20to%20plan%20an%20event!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 p-8 rounded-[3rem] bg-primary text-white group hover:bg-accent transition-all shadow-xl">
                         <div className="w-16 h-16 rounded-[1.5rem] bg-white/10 flex items-center justify-center text-white mb-0">
                            <MessageCircle size={32} />
                         </div>

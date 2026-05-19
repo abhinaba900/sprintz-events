@@ -61,7 +61,7 @@ export const ContactForm = ({ isModal = false, onSuccess }: ContactFormProps) =>
           <input 
             type="tel" 
             required
-            placeholder="+91 98765 43210"
+            placeholder="+91 91487 77814"
             className="w-full bg-subtle-grey border-2 border-transparent focus:border-accent focus:bg-white p-4 rounded-xl outline-none transition-all font-bold text-primary placeholder:text-zinc-300"
             onChange={(e) => setFormData({...formData, phone: e.target.value})}
           />
