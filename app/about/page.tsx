@@ -372,6 +372,12 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {[
                 {
+                  name: "🏏 Sathish.M",
+                  role: "Sports Operations & Professional Umpire",
+                  image: "/Satish.webp",
+                  desc: "A professional cricket umpire with strong on-ground experience, Satish manages tournament execution, match operations, umpiring coordination, and sports event management.",
+                },
+                {
                   name: "👨 Santhosh Kumar.J",
                   role: "Corporate Strategy & Business Relations",
                   image: "/santosh.webp",
@@ -383,12 +389,7 @@ export default function AboutPage() {
                   image: "/Mamatha.webp",
                   desc: "Mamatha specializes in client communication, event planning, and coordination, ensuring smooth execution and a seamless experience for every client.",
                 },
-                {
-                  name: "🏏 Sathish.M",
-                  role: "Sports Operations & Professional Umpire",
-                  image: "/Satish.webp",
-                  desc: "A professional cricket umpire with strong on-ground experience, Satish manages tournament execution, match operations, umpiring coordination, and sports event management.",
-                },
+
                 {
                   name: "🏅 Harsha G",
                   role: "Sports & Event Operations",
