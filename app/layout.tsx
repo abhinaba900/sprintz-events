@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 
 import { ModalProvider } from "@/context/ModalContext";
 import { QuoteModal } from "@/components/QuoteModal";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function RootLayout({
   children,
@@ -36,6 +37,7 @@ export default function RootLayout({
         <ModalProvider>
           {children}
           <QuoteModal />
+          <WhatsAppButton />
         </ModalProvider>
       </body>
     </html>
