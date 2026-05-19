@@ -373,9 +373,9 @@ export default function AboutPage() {
               {[
                 {
                   name: "🏏 Sathish.M",
-                  role: "Sports Operations & Professional Umpire",
+                  role: "Business Operations & Event Management",
                   image: "/Satish.webp",
-                  desc: "A professional cricket umpire with strong on-ground experience, Satish manages tournament execution, match operations, umpiring coordination, and sports event management.",
+                  desc: "With strong experience in managing sports and corporate events, Satish oversees operations, execution planning, vendor coordination, and overall event management to ensure every event runs seamlessly.",
                 },
                 {
                   name: "👨 Santhosh Kumar.J",
