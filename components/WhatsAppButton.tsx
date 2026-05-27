@@ -22,7 +22,7 @@ export const WhatsAppButton = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-[99] flex items-center gap-3">
+    <div className="fixed bottom-6 left-6 z-[99] flex flex-row-reverse items-center gap-3">
       {/* Tooltip */}
       <AnimatePresence>
         {showTooltip && (
@@ -30,9 +30,9 @@ export const WhatsAppButton = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            initial={{ opacity: 0, x: 20, scale: 0.95 }}
+            initial={{ opacity: 0, x: -20, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: 10, scale: 0.95 }}
+            exit={{ opacity: 0, x: -10, scale: 0.95 }}
             className="hidden md:flex bg-white text-primary font-black uppercase tracking-wider text-xs px-4 py-3 rounded-2xl shadow-xl border border-subtle-grey items-center gap-2 hover:text-accent transition-colors cursor-pointer group/tooltip italic"
           >
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />

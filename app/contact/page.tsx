@@ -184,9 +184,9 @@ export default function ContactPage() {
                        <div className="flex gap-6 items-start">
                           <MapPin className="text-accent w-8 h-8 shrink-0" />
                           <div className="text-xl font-bold text-zinc-600 italic">
-                             123 Event Lane, Suite 456, <br />
-                             Indiranagar, Bangalore, <br />
-                             Karnataka 560038
+                             #303, Janani, 15th Cross, <br />
+                             Balaji Layout, Mallathalli, <br />
+                             Bengaluru - 560056
                           </div>
                        </div>
                        <Button variant="outline" className="h-14 px-8 border-primary text-primary hover:bg-primary hover:text-white rounded-2xl font-black italic uppercase">

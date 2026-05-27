@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Globe, Send, Camera, Briefcase } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, Send } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -29,11 +29,17 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
                 <Send className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-                <Camera className="w-5 h-5" />
+              <a href="https://www.instagram.com/sprintzevents26/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-                <Briefcase className="w-5 h-5" />
+              <a href="https://www.facebook.com/profile.php?id=61590459778813" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -68,7 +74,7 @@ const Footer = () => {
             <ul className="space-y-6 text-white/70">
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-accent shrink-0" />
-                <span>123 Event Lane, Suite 456, Bangalore, KA 560001</span>
+                <span>#303, Janani, 15th Cross, Balaji Layout, Mallathalli, Bengaluru - 560056</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="w-5 h-5 text-accent shrink-0" />
