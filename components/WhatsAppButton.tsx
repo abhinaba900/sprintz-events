@@ -17,7 +17,7 @@ export const WhatsAppButton = () => {
     };
   }, []);
 
-  const phoneNumber = "919148777814";
+  const phoneNumber = "919743715519";
   const message = "Hi Sprintz Events, I'd like to plan an event!";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

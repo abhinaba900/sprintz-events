@@ -107,7 +107,7 @@ export const ContactForm = ({ isModal = false, onSuccess }: ContactFormProps) =>
         </p>
         <div className="pt-4 flex flex-col sm:flex-row gap-4 w-full justify-center">
           <a
-            href="https://wa.me/919148777814?text=Hi%20Sprintz%20Events%2C%20I%20just%20submitted%20an%20enquiry%20and%20would%20like%20to%20chat!"
+            href="https://wa.me/919743715519?text=Hi%20Sprintz%20Events%2C%20I%20just%20submitted%20an%20enquiry%20and%20would%20like%20to%20chat!"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-4 rounded-xl font-bold uppercase tracking-wider text-xs hover:bg-[#128C7E] transition-all shadow-md group"
@@ -186,7 +186,7 @@ export const ContactForm = ({ isModal = false, onSuccess }: ContactFormProps) =>
               type="tel"
               name="PhoneNumber_countrycode"
               required
-              placeholder="+91 91487 77814"
+              placeholder="+91 97437 15519"
               className="w-full bg-subtle-grey border-2 border-transparent focus:border-accent focus:bg-white p-4 rounded-xl outline-none transition-all font-bold text-primary placeholder:text-zinc-300"
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             />
