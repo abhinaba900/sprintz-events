@@ -32,6 +32,7 @@ import {
 import { Button } from "@/components/ui/Button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HikingEventSection from "@/components/HikingEventSection";
 import { useModal } from "@/context/ModalContext";
 
 // Animation Variants
@@ -513,6 +514,9 @@ export default function SportsEventsPage() {
             </div>
           </div>
         </section>
+
+        {/* HIKING EVENT SHOWCASE */}
+        <HikingEventSection />
 
         {/* 9. GALLERY PREVIEW */}
         <section className="py-24 bg-white overflow-hidden">

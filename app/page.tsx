@@ -22,6 +22,7 @@ import {
 import { Button } from "@/components/ui/Button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HikingEventSection from "@/components/HikingEventSection";
 import { useModal } from "@/context/ModalContext";
 
 // Animation Variants
@@ -340,6 +341,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* HIKING EVENT SHOWCASE */}
+        <HikingEventSection />
 
         {/* TRACK RECORD (NUMBERS SECTION) */}
         <section id="stats" className="py-24 bg-primary text-white overflow-hidden relative">
